@@ -71,7 +71,7 @@ We have to navigate one level back to the **ros2_ws/src/py_pubsub** directory, w
 
 Need to open **package.xml**
 
-Make sure to fill **<description>**, **<maintainer>** and **<license>** tags
+Make sure to fill **description**, **maintainer** and **license** tags
 
 Add the following dependencies corresponding to your node’s import statements
 
