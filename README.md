@@ -100,3 +100,19 @@ Now the directory should have the following
 ```c++
 __init__.py  publisher_member_function.py  subscriber_member_function.py
 ```
+
+![publisher1](https://user-images.githubusercontent.com/90182787/192693717-777cc400-d275-4af5-b2ae-bd720b7b5df5.jpg)
+
+# #3.1 Add an entry point
+
+Open **setup.py** and add the entry point for the subscriber and the publisher. The *entry_points* field should now look like this
+
+```python
+entry_points={
+        'console_scripts': [
+                'talker = py_pubsub.publisher_member_function:main',
+                'listener = py_pubsub.subscriber_member_function:main',
+        ],
+},
+```
+
