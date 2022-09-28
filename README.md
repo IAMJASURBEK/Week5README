@@ -64,3 +64,23 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
+
+## #2.2 adding dependencies
+
+We have to navigate one level back to the **ros2_ws/src/py_pubsub** directory, where the **setup.py**, **setup.cfg**, and **package.xml** files have been created for us
+
+Need to open **package.xml**
+
+Make sure to fill **<description>**, **<maintainer>** and **<license>** tags
+
+Add the following dependencies corresponding to your node’s import statements
+
+```python
+<exec_depend>rclpy</exec_depend>
+<exec_depend>std_msgs</exec_depend>
+```
+
+![package](https://user-images.githubusercontent.com/90182787/192692561-d97d3ff0-6aa7-40bf-94b3-6ef777f0018b.jpg)
+
+Make sure to save the file
+
