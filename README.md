@@ -16,7 +16,10 @@ the output should be as below
 
 Downloading the example talker code by entering the following command:
 
-`wget https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py`
+```wget https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py```
 
 ![w2](https://user-images.githubusercontent.com/90182787/192687253-f1f91eee-f50f-4bf5-b8d0-d2718e586ecb.jpg)
 
+## #2.1 Examing the code
+
+opening the file using your preferred ext editor, you can notice from the code that node classes can be used because it imports @rclpy@
