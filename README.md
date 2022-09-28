@@ -4,7 +4,7 @@
 
 # #1 create a package
 
-Recalling  that package should be created in the src directory, not the root of the workspace. So, navigate into ros2_ws/src, and run the package creation command:
+Recalling  that package should be created in the src directory, not the root of the workspace. So, navigate into **ros2_ws/src**, and run the package creation command:
 
 `ros2 pkg create --build-type ament_python py_pubsub`
 
@@ -22,5 +22,5 @@ Downloading the example talker code by entering the following command:
 
 ## #2.1 Examing the code
 
-you can open the pulisher_member_function.py and examine it. you can notice from the code that node classes can be used because it imports rclpy
-Next, a timer is created with a callback to execute every 0.5 seconds. self.i is a counter used in the callback.
+you can open the **pulisher_member_function.py** and examine it. you can notice from the code that node classes can be used because it imports **rclpy**
+Next, a timer is created with a callback to execute every 0.5 seconds. **self.i** is a counter used in the callback.
