@@ -84,3 +84,15 @@ Add the following dependencies corresponding to your node’s import statements
 
 Make sure to save the file
 
+# #3 Write the subscriber node
+
+Return to **ros2_ws/src/py_pubsub/py_pubsub** to create the next node. Enter the following code in your terminal
+
+```pyhton
+wget https://raw.githubusercontent.com/ros2/examples/humble/rclpy/topics/minimal_subscriber/examples_rclpy_minimal_subscriber/subscriber_member_function.py
+```
+Now the directory should have the following
+
+```c++
+__init__.py  publisher_member_function.py  subscriber_member_function.py
+```
