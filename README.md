@@ -145,3 +145,15 @@ ros2 run py_pubsub talker
 ```
 
 ![talker](https://user-images.githubusercontent.com/90182787/192695030-73b773ee-66b8-43be-9d69-089ed05ec30b.jpg)
+
+Need to open another terminal, source the setup files from inside ros2_ws again, and then start the listener node
+
+```python
+ros2 run py_pubsub listener
+```
+
+You can check the output form the screenshot below
+
+![listerner](https://user-images.githubusercontent.com/90182787/192695599-239edbd8-87f6-4d3f-90fc-21b22b2e8d78.jpg)
+
+Press **Ctrl+C** in each terminal to stop the nodes from spinning
