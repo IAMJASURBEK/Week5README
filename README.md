@@ -118,7 +118,7 @@ entry_points={
 
 ![setup](https://user-images.githubusercontent.com/90182787/192694272-df8d695b-fe93-4b05-bd61-b59eaeca2da5.jpg)
 
-# #4Build and run
+# #4 Build and run
 
 You likely already have the **rclpy** and **std_msgs** packages installed as part of your ROS 2 system. It’s good practice to run **rosdep** in the root of your workspace (**ros2_ws**) to check for missing dependencies before building
 
@@ -126,7 +126,7 @@ You likely already have the **rclpy** and **std_msgs** packages installed as par
 rosdep install -i --from-path src --rosdistro humble -y
 ```
 
-Still in the root of your workspace, ros2_ws,need to build your new package
+Still in the root of your workspace, **ros2_ws**, need to build your new package
 
 ```pyhton
 colcon build --packages-select py_pubsub
