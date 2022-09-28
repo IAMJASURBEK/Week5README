@@ -103,7 +103,7 @@ __init__.py  publisher_member_function.py  subscriber_member_function.py
 
 ![publisher1](https://user-images.githubusercontent.com/90182787/192693717-777cc400-d275-4af5-b2ae-bd720b7b5df5.jpg)
 
-# #3.1 Add an entry point
+## #3.1 Add an entry point
 
 Open **setup.py** and add the entry point for the subscriber and the publisher. The *entry_points* field should now look like this
 
@@ -117,3 +117,31 @@ entry_points={
 ```
 
 ![setup](https://user-images.githubusercontent.com/90182787/192694272-df8d695b-fe93-4b05-bd61-b59eaeca2da5.jpg)
+
+# #4Build and run
+
+You likely already have the **rclpy** and **std_msgs** packages installed as part of your ROS 2 system. It’s good practice to run **rosdep** in the root of your workspace (**ros2_ws**) to check for missing dependencies before building
+
+```pyhton
+rosdep install -i --from-path src --rosdistro humble -y
+```
+
+Still in the root of your workspace, ros2_ws,need to build your new package
+
+```pyhton
+colcon build --packages-select py_pubsub
+```
+
+Open a new terminal, navigate to **ros2_ws**
+
+```pyhton
+. install/setup.bash
+```
+
+Now run the talker node
+
+```python
+ros2 run py_pubsub talker
+```
+
+![talker](https://user-images.githubusercontent.com/90182787/192695030-73b773ee-66b8-43be-9d69-089ed05ec30b.jpg)
