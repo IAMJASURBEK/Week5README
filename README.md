@@ -22,4 +22,5 @@ Downloading the example talker code by entering the following command:
 
 ## #2.1 Examing the code
 
-opening the file using your preferred ext editor, you can notice from the code that node classes can be used because it imports @rclpy@
+you can open the pulisher_member_function.py and examine it. you can notice from the code that node classes can be used because it imports rclpy
+<Next, a timer is created with a callback to execute every 0.5 seconds. self.i is a counter used in the callback.>
